@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>  </title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="container">
+        <header>
+        <hgroup>
+          <h1>我是主标题</h1>
+          <h2>我是副标题</h2>
+        </hgroup>
+          <p>我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我
+            是文本我是文本我是文本我是文本我是文本我是文本我是文本</p>
+          <p>我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我
+              是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我
+                是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我
+                  是文本我是文本我是文本我是文本我是文本我是文本我是文本</p>
+        </header>
+      <nav>
+        <a href="#">菜单>></a>
+        <ul>
+          <li><a href="#">主页</a></li>
+          <li><a href="#">产品</a>
+            <ul>
+              <li><a href="#">HTML5</a>
+              <ul>
+                <li><a href="#">AAA</a></li>
+                <li><a href="#">BBB</a></li>
+                <li><a href="#">CCC</a></li>
+              </ul></li>
+              <li><a href="#">CSS3</a>
+                <ul>
+                  <li><a href="#">DDD</a></li>
+                  <li><a href="#">EEE</a></li>
+                  <li><a href="#">FFF</a></li>
+                </ul></li>
+              <li><a href="#">javascript</a>
+                <ul>
+                  <li><a href="#">GGG</a></li>
+                  <li><a href="#">HHH</a></li>
+                  <li><a href="#">III</a></li>
+                </ul></li>
+            </ul>
+          </li>
+          <li><a href="#">项目</a>
+            <ul>
+              <li><a href="#">node.js</a>
+              <ul>
+                <li><a href="#">AAA</a></li>
+                <li><a href="#">BBB</a></li>
+                <li><a href="#">CCC</a></li>
+              </ul></li>
+              <li><a href="#">one.js</a>
+                <ul>
+                  <li><a href="#">DDD</a></li>
+                  <li><a href="#">EEE</a></li>
+                  <li><a href="#">FFF</a></li>
+                </ul></li>
+              <li><a href="#">two.js</a>
+                <ul>
+                  <li><a href="#">GGG</a></li>
+                  <li><a href="#">HHH</a></li>
+                  <li><a href="#">III</a></li>
+                </ul></li>
+            </ul>
+          </li>
+          <li><a href="#">关于我们</a></li>
+        </ul>
+      </nav>
+      <div class="main">
+        <section class="product-list">
+          <h1>产品展示</h1>
+          <div class="product">
+            <h4>产品名称</h4>
+            <img src="p.jpg" alt="">
+            <p>产品描述</p>
+          </div>
+        </section>
+        <section>
+
+        </section>
+      </div>
+      <footer>
+
+      </footer>
+      <script type="text/javascript"> //复制多个产品展示的内容
+        const pdom = document.querySelector(".product");
+        const productListDom = document.querySelector(".product-list");
+        // console.log(pdom.outerHTML);
+        for (let i = 0; i < 20; i++) {
+          productListDom.insertAdjacentHTML("beforeEnd",pdom.outerHTML)
+         }
+         pdom.remove();
+      </script>
+      <!-- <script type="text/javascript">
+      var a = document.querySelector("li");
+        console.log(a.offsetHeight);
+      </script> -->
+      <script src="index.js" charset="utf-8"></script>
+    </div>
+  </body>
+</html>

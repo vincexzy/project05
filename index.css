@@ -1,0 +1,174 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+/* border-width: 1px;
+border-color: #eee;
+border-style: solid; */
+/* border:1px solid #eee; */
+  min-width: 500px;
+  max-width: 800px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+.container > header{
+  background:linear-gradient(#003dff , #00c889);
+  padding: 15px;
+  border-radius: 20px 20px 0 0;
+}
+.container > nav {
+  background:linear-gradient(black,#ff7c7c);
+  /* background-color: #bbb; */
+}
+
+.container > nav > a{
+  display: none;
+}
+.container > nav a {
+  text-decoration: none;
+  line-height: 30px;
+  padding:10px;
+}
+
+.container li{
+  list-style: none;
+  /* color:#fff; */
+}
+/*
+  @media 媒体查询功能
+  当屏幕宽度在800px以上时实现以下CSS样式
+*/
+@media(min-width:800px){
+  .container > nav > ul >li{
+    display: inline-block;
+    position: relative;
+  }
+
+  .container >nav > ul > li > ul{
+    display: none;
+    width: 150px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 30px;
+    background:linear-gradient(to top,black,#fff);
+  }
+
+  .container > nav > ul > li:hover > ul{
+    display: block;
+  }
+  .container > nav > ul > li > ul > li > ul{
+    display: none;
+    width: 50px;
+    background:linear-gradient(to right,#666,#666 50%,rgb(255, 96, 96));
+    /* background-color: rgb(255, 96, 96); */
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    left:150px;
+  }
+  .container > nav > ul > li > ul > li:nth-child(1):hover{
+    /* opacity: 0.5; */
+    background:#666 ;
+    /* background-color: rgb(255, 96, 96); */
+  }
+  .container > nav > ul > li > ul > li:nth-child(1):hover >ul{
+    display: block;
+  }
+  .container > nav > ul > li > ul > li:nth-child(2):hover{
+    /* opacity: 0.5; */
+    background:#666;
+    /* background-color: rgb(255, 96, 96); */
+  }
+  .container > nav > ul > li > ul > li:nth-child(2):hover >ul{
+    display: block;
+  }
+  .container > nav > ul > li > ul > li:nth-child(3):hover{
+    /* opacity: 0.5; */
+    background:#666;
+    /* background-color: rgb(255, 96, 96); */
+  }
+  .container > nav > ul > li > ul > li:nth-child(3):hover >ul{
+    display: block;
+  }
+}
+
+/*
+  当屏幕宽度在800px以下时实现以下CSS样式
+*/
+@media(max-width:799px){
+  .container > nav > a{
+    margin-left: 20px;
+    display: block;
+    line-height: 50px;
+  }
+
+  .container > nav > ul{
+    display: none;
+  }
+
+  .container > nav > ul.open >li{
+      display: inline-block;
+      position: relative;
+  }
+  .container > nav > ul.open{
+      display: block;
+      position: relative;
+  }
+  .container > nav > ul.open > li{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    /* position: absolute; */
+  }
+  .container > nav > ul.open > li > ul{
+    display:none;
+  }
+  .container > nav > ul.open > li > ul.open{
+    display: block;
+  }
+  .container > nav > ul.open > li > ul.open > li > ul{
+    display: none;
+  }
+  .container > nav > ul.open > li > ul.open > li > ul.open{
+    display:block;
+  }
+}
+
+  a:link, a:visited, a:active{
+    color:#fff;
+  }
+
+  a:hover{
+    font-size: 13pt;
+  }
+
+
+.main{
+  border: 1px solid #eee;
+  min-height: 300px;
+}
+.product-list > .product{
+  display:inline-block;
+  margin: 10px;
+  text-align: center;
+  width: 80px;
+  height: 120px;
+  border: 1px solid #eee;
+}
+
+.product h4{
+  margin:4px;
+}
+.product > img{
+  width: 70px;
+  height: 60px;
+}
+.product > p{
+  margin: 3px;
+  font-size: 9pt;
+  color: #666;
+}
