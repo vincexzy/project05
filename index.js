@@ -48,8 +48,8 @@ const adom22 = document.querySelector("nav > ul > li:nth-child(3) > ul > li:nth-
 const adom23 = document.querySelector("nav > ul > li:nth-child(3) > ul > li:nth-child(3) > a");
 const uldom21 = document.querySelector("nav > ul > li:nth-child(3) > ul > li > ul ");
 console.log(uldom21);
-const uldom22 = document.querySelector("nav > ul > li > ul > li:nth-child(2) > ul");
-const uldom23 = document.querySelector("nav > ul > li > ul > li:nth-child(3) > ul");
+const uldom22 = document.querySelector("nav > ul > li:nth-child(3) > ul > li:nth-child(2) > ul");
+const uldom23 = document.querySelector("nav > ul > li:nth-child(3) > ul > li:nth-child(3) > ul");
 adom21.addEventListener("click",function (event) {
   uldom21.classList.toggle("open");
 });
